@@ -1,0 +1,389 @@
+[
+  {
+    "id": "pikachu-summer-vacation-misc-promo",
+    "name": "Pikachu's Summer Vacation",
+    "set": "Miscellaneous Promos",
+    "number": null,
+    "notes": "Jumbo",
+    "image": null,
+    "description": null,
+    "tags": ["jumbo", "promo"],
+    "isJumbo": true
+  },
+  {
+    "id": "pokemon-valley-misc-promo",
+    "name": "Pokémon Valley",
+    "set": "Miscellaneous Promos",
+    "number": null,
+    "notes": "Jumbo",
+    "image": null,
+    "description": null,
+    "tags": ["jumbo", "promo"],
+    "isJumbo": true
+  },
+  {
+    "id": "machop-expansion-sheet-2",
+    "name": "Machop",
+    "set": "Expansion Sheet 2",
+    "number": null,
+    "notes": null,
+    "image": null,
+    "description": null,
+    "tags": []
+  },
+  {
+    "id": "mistys-wrath-gym-heroes-114",
+    "name": "Misty's Wrath",
+    "set": "Gym Heroes",
+    "number": "114",
+    "notes": null,
+    "image": null,
+    "description": null,
+    "tags": []
+  },
+  {
+    "id": "sabrinas-psychic-control-gym-challenge-121",
+    "name": "Sabrina's Psychic Control",
+    "set": "Gym Challenge",
+    "number": "121",
+    "notes": null,
+    "image": null,
+    "description": null,
+    "tags": []
+  },
+  {
+    "id": "tropical-wind-tropical-mega-battle",
+    "name": "Tropical Wind",
+    "set": "Tropical Mega Battle Promo",
+    "number": null,
+    "notes": null,
+    "image": null,
+    "description": null,
+    "tags": ["promo"]
+  },
+  {
+    "id": "slowking-southern-islands-14",
+    "name": "Slowking",
+    "set": "Southern Islands",
+    "number": "14",
+    "notes": null,
+    "image": null,
+    "description": null,
+    "tags": []
+  },
+  {
+    "id": "tropical-breeze-vs-tropical-mega-battle",
+    "name": "Tropical Breeze",
+    "set": "VS: Tropical Mega Battle",
+    "number": null,
+    "notes": null,
+    "image": null,
+    "description": null,
+    "tags": []
+  },
+  {
+    "id": "tropical-wind-nintendo-promos-26",
+    "name": "Tropical Wind",
+    "set": "Nintendo Promos",
+    "number": "26",
+    "notes": null,
+    "image": null,
+    "description": null,
+    "tags": ["promo"]
+  },
+  {
+    "id": "tropical-tidal-wave-nintendo-promos-27",
+    "name": "Tropical Tidal Wave",
+    "set": "Nintendo Promos",
+    "number": "27",
+    "notes": null,
+    "image": null,
+    "description": null,
+    "tags": ["promo"]
+  },
+  {
+    "id": "pokepark-mudkip-pcg-p-48",
+    "name": "PokéPark's Mudkip",
+    "set": "PCG-P Promos",
+    "number": "48",
+    "notes": null,
+    "image": null,
+    "description": null,
+    "tags": ["promo"]
+  },
+  {
+    "id": "tropical-tidal-wave-nintendo-promos-36",
+    "name": "Tropical Tidal Wave",
+    "set": "Nintendo Promos",
+    "number": "36",
+    "notes": null,
+    "image": null,
+    "description": null,
+    "tags": ["promo"]
+  },
+  {
+    "id": "tropical-wind-dp-promos-5",
+    "name": "Tropical Wind",
+    "set": "DP Promos",
+    "number": "5",
+    "notes": null,
+    "image": null,
+    "description": null,
+    "tags": ["promo"]
+  },
+  {
+    "id": "tropical-wind-dp-promos-25",
+    "name": "Tropical Wind",
+    "set": "DP Promos",
+    "number": "25",
+    "notes": null,
+    "image": null,
+    "description": null,
+    "tags": ["promo"]
+  },
+  {
+    "id": "tropical-wind-dp-promos-48",
+    "name": "Tropical Wind",
+    "set": "DP Promos",
+    "number": "48",
+    "notes": null,
+    "image": null,
+    "description": null,
+    "tags": ["promo"]
+  },
+  {
+    "id": "tropical-tidal-wave-hgss-promos-18",
+    "name": "Tropical Tidal Wave",
+    "set": "HGSS Promos",
+    "number": "18",
+    "notes": null,
+    "image": null,
+    "description": null,
+    "tags": ["promo"]
+  },
+  {
+    "id": "tropical-beach-bw-promos-28",
+    "name": "Tropical Beach",
+    "set": "BW Promos",
+    "number": "28",
+    "notes": null,
+    "image": null,
+    "description": null,
+    "tags": ["promo"]
+  },
+  {
+    "id": "tropical-beach-bw-promos-50",
+    "name": "Tropical Beach",
+    "set": "BW Promos",
+    "number": "50",
+    "notes": null,
+    "image": null,
+    "description": null,
+    "tags": ["promo"]
+  },
+  {
+    "id": "champions-festival-bw-promos-95",
+    "name": "Champions Festival",
+    "set": "BW Promos",
+    "number": "95",
+    "notes": null,
+    "image": null,
+    "description": null,
+    "tags": ["promo"]
+  },
+  {
+    "id": "champions-festival-xy-promos-91",
+    "name": "Champions Festival",
+    "set": "XY Promos",
+    "number": "91",
+    "notes": null,
+    "image": null,
+    "description": null,
+    "tags": ["promo"]
+  },
+  {
+    "id": "champions-festival-xy-promos-176",
+    "name": "Champions Festival",
+    "set": "XY Promos",
+    "number": "176",
+    "notes": null,
+    "image": null,
+    "description": null,
+    "tags": ["promo"]
+  },
+  {
+    "id": "champions-festival-sm-promos-78",
+    "name": "Champions Festival",
+    "set": "SM Promos",
+    "number": "78",
+    "notes": null,
+    "image": null,
+    "description": null,
+    "tags": ["promo"]
+  },
+  {
+    "id": "champions-festival-sm-promos-148",
+    "name": "Champions Festival",
+    "set": "SM Promos",
+    "number": "148",
+    "notes": null,
+    "image": null,
+    "description": null,
+    "tags": ["promo"]
+  },
+  {
+    "id": "farfetchd-team-up-127",
+    "name": "Farfetch'd",
+    "set": "Team Up",
+    "number": "127",
+    "notes": null,
+    "image": null,
+    "description": null,
+    "tags": []
+  },
+  {
+    "id": "champions-festival-sm-promos-231",
+    "name": "Champions Festival",
+    "set": "SM Promos",
+    "number": "231",
+    "notes": null,
+    "image": null,
+    "description": null,
+    "tags": ["promo"]
+  },
+  {
+    "id": "floette-cosmic-eclipse-151",
+    "name": "Floette",
+    "set": "Cosmic Eclipse",
+    "number": "151",
+    "notes": null,
+    "image": null,
+    "description": null,
+    "tags": []
+  },
+  {
+    "id": "champions-festival-swsh-promos-296",
+    "name": "Champions Festival",
+    "set": "SWSH Promos",
+    "number": "296",
+    "notes": null,
+    "image": null,
+    "description": null,
+    "tags": ["promo"]
+  },
+  {
+    "id": "wiglett-scarlet-violet-206",
+    "name": "Wiglett",
+    "set": "Scarlet & Violet",
+    "number": "206",
+    "notes": null,
+    "image": null,
+    "description": null,
+    "tags": []
+  },
+  {
+    "id": "pikachu-151-173",
+    "name": "Pikachu",
+    "set": "151",
+    "number": "173",
+    "notes": null,
+    "image": null,
+    "description": null,
+    "tags": []
+  },
+  {
+    "id": "paradise-resort-sv-promos-45",
+    "name": "Paradise Resort",
+    "set": "SV Promos",
+    "number": "45",
+    "notes": null,
+    "image": null,
+    "description": null,
+    "tags": ["promo"]
+  },
+  {
+    "id": "clive-paldean-fates-236",
+    "name": "Clive",
+    "set": "Paldean Fates",
+    "number": "236",
+    "notes": null,
+    "image": null,
+    "description": null,
+    "tags": []
+  },
+  {
+    "id": "chansey-twilight-masquerade-187",
+    "name": "Chansey",
+    "set": "Twilight Masquerade",
+    "number": "187",
+    "notes": null,
+    "image": null,
+    "description": null,
+    "tags": []
+  },
+  {
+    "id": "paradise-resort-sv-promos-150",
+    "name": "Paradise Resort",
+    "set": "SV Promos",
+    "number": "150",
+    "notes": null,
+    "image": null,
+    "description": null,
+    "tags": ["promo"]
+  },
+  {
+    "id": "pikachu-collection-151-171",
+    "name": "Pikachu",
+    "set": "Collection 151",
+    "number": "171",
+    "notes": "Solo lanzada en chino simplificado",
+    "image": null,
+    "description": null,
+    "tags": ["exclusive"],
+    "language": "zh-Hans"
+  },
+  {
+    "id": "paradise-resort-sv-promos-224",
+    "name": "Paradise Resort",
+    "set": "SV Promos",
+    "number": "224",
+    "notes": null,
+    "image": null,
+    "description": null,
+    "tags": ["promo"]
+  },
+  {
+    "id": "eevee-sm-p-promos-287",
+    "name": "Eevee",
+    "set": "SM-P Promos",
+    "number": "287",
+    "notes": "Silhouette",
+    "image": null,
+    "description": null,
+    "tags": ["promo", "silhouette"],
+    "variant": "Silhouette"
+  },
+  {
+    "id": "pikachu-xy-p-promos-2014",
+    "name": "Pikachu",
+    "set": "XY-P Promos",
+    "number": "©2014",
+    "notes": "Snowman; Jumbo",
+    "image": null,
+    "description": null,
+    "tags": ["promo", "jumbo"],
+    "isJumbo": true,
+    "variant": "Snowman"
+  },
+  {
+    "id": "champions-festival-xy-promos-27",
+    "name": "Champions Festival",
+    "set": "XY Promos",
+    "number": "27",
+    "notes": "Boat",
+    "image": null,
+    "description": null,
+    "tags": ["promo"],
+    "variant": "Boat"
+  }
+]

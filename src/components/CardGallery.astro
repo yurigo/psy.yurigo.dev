@@ -1,0 +1,42 @@
+---
+import PokemonCardItem from './PokemonCardItem.astro';
+import EmptyState from './EmptyState.astro';
+
+interface Card {
+  id: string;
+  name: string;
+  set: string | null;
+  number: string | null;
+  notes: string | null;
+  image: string | null;
+  description: string | null;
+  tags: string[];
+  isJumbo: boolean;
+  variant: string | null;
+  language: string | null;
+  rarity: string | null;
+}
+
+interface Props {
+  cards: Card[];
+}
+
+const { cards } = Astro.props;
+---
+
+{cards.length === 0 ? (
+  <EmptyState />
+) : (
+  <section aria-label="Galería de cartas Pokémon">
+    <ul
+      class="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6"
+      role="list"
+    >
+      {cards.map((card) => (
+        <li>
+          <PokemonCardItem card={card} />
+        </li>
+      ))}
+    </ul>
+  </section>
+)}
