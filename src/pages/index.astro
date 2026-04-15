@@ -29,7 +29,7 @@ const sets = await getSets();
           id="search-input"
           type="search"
           placeholder="Buscar por nombre…"
-          class="w-full rounded-xl border border-zinc-200 bg-white py-2.5 pl-9 pr-4 text-sm text-zinc-900 placeholder-zinc-400 shadow-sm outline-none transition focus:border-zinc-400 focus:ring-2 focus:ring-zinc-200"
+          class="w-full rounded-xl border border-zinc-200 bg-white py-2.5 pl-9 pr-4 text-sm text-zinc-900 placeholder-zinc-400 shadow-sm outline-none transition focus:border-zinc-400 focus:ring-2 focus:ring-zinc-200 dark:border-zinc-600 dark:bg-zinc-800 dark:text-zinc-50 dark:placeholder-zinc-500 dark:focus:border-zinc-500 dark:focus:ring-zinc-700"
           autocomplete="off"
         />
       </div>
@@ -39,7 +39,7 @@ const sets = await getSets();
         <label for="set-filter" class="sr-only">Filtrar por colección</label>
         <select
           id="set-filter"
-          class="appearance-none rounded-xl border border-zinc-200 bg-white py-2.5 pl-4 pr-9 text-sm text-zinc-700 shadow-sm outline-none transition focus:border-zinc-400 focus:ring-2 focus:ring-zinc-200 cursor-pointer"
+          class="appearance-none rounded-xl border border-zinc-200 bg-white py-2.5 pl-4 pr-9 text-sm text-zinc-700 shadow-sm outline-none transition focus:border-zinc-400 focus:ring-2 focus:ring-zinc-200 cursor-pointer dark:border-zinc-600 dark:bg-zinc-800 dark:text-zinc-300 dark:focus:border-zinc-500 dark:focus:ring-zinc-700"
         >
           <option value="">Todas las colecciones</option>
           {sets.map((set) => (
@@ -58,7 +58,7 @@ const sets = await getSets();
         <label for="sort-select" class="sr-only">Ordenar</label>
         <select
           id="sort-select"
-          class="appearance-none rounded-xl border border-zinc-200 bg-white py-2.5 pl-4 pr-9 text-sm text-zinc-700 shadow-sm outline-none transition focus:border-zinc-400 focus:ring-2 focus:ring-zinc-200 cursor-pointer"
+          class="appearance-none rounded-xl border border-zinc-200 bg-white py-2.5 pl-4 pr-9 text-sm text-zinc-700 shadow-sm outline-none transition focus:border-zinc-400 focus:ring-2 focus:ring-zinc-200 cursor-pointer dark:border-zinc-600 dark:bg-zinc-800 dark:text-zinc-300 dark:focus:border-zinc-500 dark:focus:ring-zinc-700"
         >
           <option value="default">Sin ordenar</option>
           <option value="name-asc">Nombre (A→Z)</option>
@@ -74,7 +74,7 @@ const sets = await getSets();
     </div>
 
     <!-- Card count after filtering (updated by JS) -->
-    <p id="card-count" class="mb-4 text-sm text-zinc-500" aria-live="polite">
+    <p id="card-count" class="mb-4 text-sm text-zinc-500 dark:text-zinc-400" aria-live="polite">
       Mostrando {allCards.length} {allCards.length === 1 ? 'carta' : 'cartas'}
     </p>
 
@@ -86,7 +86,7 @@ const sets = await getSets();
     <!-- No results message (hidden by default) -->
     <p
       id="no-results"
-      class="hidden py-16 text-center text-zinc-500"
+      class="hidden py-16 text-center text-zinc-500 dark:text-zinc-400"
       role="status"
     >
       No se encontraron cartas con ese criterio de búsqueda.
