@@ -1,0 +1,47 @@
+---
+import { SITE } from '../lib/config.js';
+
+interface Props {
+  totalCards?: number;
+}
+
+const { totalCards } = Astro.props;
+---
+
+<header class="border-b border-zinc-200 bg-white">
+  <div class="mx-auto max-w-7xl px-4 py-5 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <a href="/" class="flex items-center gap-3 group" aria-label="Ir al inicio">
+          <!-- Poké Ball icon -->
+          <span
+            class="flex h-9 w-9 items-center justify-center rounded-full bg-zinc-900 text-white shadow transition-transform group-hover:scale-110"
+            aria-hidden="true"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="h-5 w-5"
+            >
+              <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.5" />
+              <path d="M2 12h20M12 10a2 2 0 1 0 0 4 2 2 0 0 0 0-4z" stroke="currentColor" stroke-width="1.5" fill="none" />
+            </svg>
+          </span>
+          <div>
+            <h1 class="text-base font-semibold leading-tight text-zinc-900">
+              {SITE.title}
+            </h1>
+            <p class="hidden text-xs text-zinc-500 sm:block">{SITE.description}</p>
+          </div>
+        </a>
+      </div>
+
+      {totalCards !== undefined && (
+        <span class="rounded-full bg-zinc-100 px-3 py-1 text-sm font-medium text-zinc-600">
+          {totalCards} {totalCards === 1 ? 'carta' : 'cartas'}
+        </span>
+      )}
+    </div>
+  </div>
+</header>
