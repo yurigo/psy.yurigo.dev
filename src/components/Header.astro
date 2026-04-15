@@ -8,14 +8,14 @@ interface Props {
 const { totalCards } = Astro.props;
 ---
 
-<header class="border-b border-zinc-200 bg-white">
+<header class="border-b border-zinc-200 bg-white dark:border-zinc-700 dark:bg-zinc-800">
   <div class="mx-auto max-w-7xl px-4 py-5 sm:px-6 lg:px-8">
     <div class="flex items-center justify-between gap-4">
       <div class="flex items-center gap-3">
         <a href="/" class="flex items-center gap-3 group" aria-label="Ir al inicio">
           <!-- Poké Ball icon -->
           <span
-            class="flex h-9 w-9 items-center justify-center rounded-full bg-zinc-900 text-white shadow transition-transform group-hover:scale-110"
+            class="flex h-9 w-9 items-center justify-center rounded-full bg-zinc-900 text-white shadow transition-transform group-hover:scale-110 dark:bg-zinc-100 dark:text-zinc-900"
             aria-hidden="true"
           >
             <svg
@@ -29,19 +29,59 @@ const { totalCards } = Astro.props;
             </svg>
           </span>
           <div>
-            <h1 class="text-base font-semibold leading-tight text-zinc-900">
+            <h1 class="text-base font-semibold leading-tight text-zinc-900 dark:text-zinc-50">
               {SITE.title}
             </h1>
-            <p class="hidden text-xs text-zinc-500 sm:block">{SITE.description}</p>
+            <p class="hidden text-xs text-zinc-500 sm:block dark:text-zinc-400">{SITE.description}</p>
           </div>
         </a>
       </div>
 
-      {totalCards !== undefined && (
-        <span class="rounded-full bg-zinc-100 px-3 py-1 text-sm font-medium text-zinc-600">
-          {totalCards} {totalCards === 1 ? 'carta' : 'cartas'}
-        </span>
-      )}
+      <div class="flex items-center gap-3">
+        {totalCards !== undefined && (
+          <span class="rounded-full bg-zinc-100 px-3 py-1 text-sm font-medium text-zinc-600 dark:bg-zinc-700 dark:text-zinc-300">
+            {totalCards} {totalCards === 1 ? 'carta' : 'cartas'}
+          </span>
+        )}
+
+        <!-- Dark mode toggle -->
+        <button
+          id="theme-toggle"
+          type="button"
+          aria-label="Cambiar modo claro/oscuro"
+          class="flex h-9 w-9 items-center justify-center rounded-full border border-zinc-200 bg-zinc-50 text-zinc-500 transition hover:bg-zinc-100 hover:text-zinc-900 focus:outline-none focus:ring-2 focus:ring-zinc-400 dark:border-zinc-600 dark:bg-zinc-700 dark:text-zinc-400 dark:hover:bg-zinc-600 dark:hover:text-zinc-50"
+        >
+          <!-- Sun icon (shown in dark mode) -->
+          <svg id="icon-sun" xmlns="http://www.w3.org/2000/svg" class="hidden h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <circle cx="12" cy="12" r="5" />
+            <path stroke-linecap="round" d="M12 2v2M12 20v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M2 12h2M20 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+          </svg>
+          <!-- Moon icon (shown in light mode) -->
+          <svg id="icon-moon" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+          </svg>
+        </button>
+      </div>
     </div>
   </div>
 </header>
+
+<script>
+  const toggle = document.getElementById('theme-toggle');
+  const iconSun = document.getElementById('icon-sun');
+  const iconMoon = document.getElementById('icon-moon');
+
+  function updateIcons() {
+    const isDark = document.documentElement.classList.contains('dark');
+    iconSun?.classList.toggle('hidden', !isDark);
+    iconMoon?.classList.toggle('hidden', isDark);
+  }
+
+  updateIcons();
+
+  toggle?.addEventListener('click', () => {
+    const isDark = document.documentElement.classList.toggle('dark');
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    updateIcons();
+  });
+</script>

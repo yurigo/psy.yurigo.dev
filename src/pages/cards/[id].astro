@@ -30,7 +30,7 @@ const pageTitle = [card.name, card.set, card.number ? `#${card.number}` : null]
     <!-- Back link -->
     <a
       href="/"
-      class="mb-8 inline-flex items-center gap-2 text-sm font-medium text-zinc-500 transition-colors hover:text-zinc-900 focus:outline-none focus:ring-2 focus:ring-zinc-400 rounded"
+      class="mb-8 inline-flex items-center gap-2 text-sm font-medium text-zinc-500 transition-colors hover:text-zinc-900 focus:outline-none focus:ring-2 focus:ring-zinc-400 rounded dark:text-zinc-400 dark:hover:text-zinc-50"
     >
       <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
         <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
@@ -41,7 +41,7 @@ const pageTitle = [card.name, card.set, card.number ? `#${card.number}` : null]
     <div class="grid gap-10 md:grid-cols-2">
       <!-- Image -->
       <div class="flex items-start justify-center">
-        <div class="relative w-full max-w-xs overflow-hidden rounded-2xl bg-zinc-100 shadow-card-hover aspect-[2.5/3.5]">
+        <div class="relative w-full max-w-xs overflow-hidden rounded-2xl bg-zinc-100 shadow-card-hover aspect-[2.5/3.5] dark:bg-zinc-700">
           {hasImage ? (
             <img
               src={card.image}
@@ -52,7 +52,7 @@ const pageTitle = [card.name, card.set, card.number ? `#${card.number}` : null]
             />
           ) : (
             <div
-              class="flex h-full w-full flex-col items-center justify-center gap-3 text-zinc-400"
+              class="flex h-full w-full flex-col items-center justify-center gap-3 text-zinc-400 dark:text-zinc-500"
               role="img"
               aria-label={`Imagen no disponible para ${card.name}`}
             >
@@ -84,18 +84,18 @@ const pageTitle = [card.name, card.set, card.number ? `#${card.number}` : null]
       <!-- Metadata -->
       <div class="flex flex-col gap-5">
         <div>
-          <h1 class="text-2xl font-bold text-zinc-900 sm:text-3xl">{card.name}</h1>
+          <h1 class="text-2xl font-bold text-zinc-900 sm:text-3xl dark:text-zinc-50">{card.name}</h1>
           {card.variant && (
-            <p class="mt-1 text-base text-zinc-500">{card.variant}</p>
+            <p class="mt-1 text-base text-zinc-500 dark:text-zinc-400">{card.variant}</p>
           )}
         </div>
 
         <dl class="flex flex-col gap-3 text-sm">
           {card.set && (
             <div class="flex items-start gap-3">
-              <dt class="w-28 shrink-0 font-medium text-zinc-500">Colección</dt>
+              <dt class="w-28 shrink-0 font-medium text-zinc-500 dark:text-zinc-400">Colección</dt>
               <dd>
-                <span class="inline-block rounded-md bg-zinc-100 px-2 py-0.5 font-medium text-zinc-700">
+                <span class="inline-block rounded-md bg-zinc-100 px-2 py-0.5 font-medium text-zinc-700 dark:bg-zinc-700 dark:text-zinc-300">
                   {card.set}
                 </span>
               </dd>
@@ -104,39 +104,39 @@ const pageTitle = [card.name, card.set, card.number ? `#${card.number}` : null]
 
           {card.number && (
             <div class="flex items-start gap-3">
-              <dt class="w-28 shrink-0 font-medium text-zinc-500">Número</dt>
-              <dd class="text-zinc-800">#{card.number}</dd>
+              <dt class="w-28 shrink-0 font-medium text-zinc-500 dark:text-zinc-400">Número</dt>
+              <dd class="text-zinc-800 dark:text-zinc-200">#{card.number}</dd>
             </div>
           )}
 
           {card.rarity && (
             <div class="flex items-start gap-3">
-              <dt class="w-28 shrink-0 font-medium text-zinc-500">Rareza</dt>
-              <dd class="text-zinc-800">{card.rarity}</dd>
+              <dt class="w-28 shrink-0 font-medium text-zinc-500 dark:text-zinc-400">Rareza</dt>
+              <dd class="text-zinc-800 dark:text-zinc-200">{card.rarity}</dd>
             </div>
           )}
 
           {card.language && (
             <div class="flex items-start gap-3">
-              <dt class="w-28 shrink-0 font-medium text-zinc-500">Idioma</dt>
-              <dd class="text-zinc-800">{card.language}</dd>
+              <dt class="w-28 shrink-0 font-medium text-zinc-500 dark:text-zinc-400">Idioma</dt>
+              <dd class="text-zinc-800 dark:text-zinc-200">{card.language}</dd>
             </div>
           )}
 
           {card.notes && (
             <div class="flex items-start gap-3">
-              <dt class="w-28 shrink-0 font-medium text-zinc-500">Notas</dt>
-              <dd class="italic text-zinc-600">{card.notes}</dd>
+              <dt class="w-28 shrink-0 font-medium text-zinc-500 dark:text-zinc-400">Notas</dt>
+              <dd class="italic text-zinc-600 dark:text-zinc-400">{card.notes}</dd>
             </div>
           )}
         </dl>
 
         {card.tags.length > 0 && (
           <div>
-            <p class="mb-2 text-xs font-medium uppercase tracking-wider text-zinc-400">Etiquetas</p>
+            <p class="mb-2 text-xs font-medium uppercase tracking-wider text-zinc-400 dark:text-zinc-500">Etiquetas</p>
             <div class="flex flex-wrap gap-1.5" aria-label="Etiquetas">
               {card.tags.map((tag) => (
-                <span class="rounded-full bg-zinc-100 px-3 py-1 text-xs font-medium text-zinc-600">
+                <span class="rounded-full bg-zinc-100 px-3 py-1 text-xs font-medium text-zinc-600 dark:bg-zinc-700 dark:text-zinc-300">
                   {tag}
                 </span>
               ))}
@@ -145,9 +145,9 @@ const pageTitle = [card.name, card.set, card.number ? `#${card.number}` : null]
         )}
 
         {card.description && (
-          <div class="rounded-xl border border-zinc-200 bg-zinc-50 p-4">
-            <p class="text-xs font-medium uppercase tracking-wider text-zinc-400 mb-2">Descripción</p>
-            <p class="text-sm leading-relaxed text-zinc-700">{card.description}</p>
+          <div class="rounded-xl border border-zinc-200 bg-zinc-50 p-4 dark:border-zinc-700 dark:bg-zinc-800">
+            <p class="text-xs font-medium uppercase tracking-wider text-zinc-400 mb-2 dark:text-zinc-500">Descripción</p>
+            <p class="text-sm leading-relaxed text-zinc-700 dark:text-zinc-300">{card.description}</p>
           </div>
         )}
       </div>
